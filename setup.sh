@@ -36,6 +36,7 @@ apt install -y chrony fail2ban ufw nano
 
 # 4. nano als Standardeditor setzen
 echo "✍️ Setze nano als Standardeditor"
+update-alternatives --install /usr/bin/editor editor /usr/bin/nano 10
 update-alternatives --set editor /usr/bin/nano
 
 # 5. Chrony konfigurieren (nur Cloudflare & METAS)
@@ -66,3 +67,4 @@ systemctl enable fail2ban
 systemctl start fail2ban
 
 echo "✅ VPS-Setup abgeschlossen!"
+
