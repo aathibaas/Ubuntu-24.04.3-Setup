@@ -45,7 +45,7 @@ Damit bleibt die Systemzeit präzise, ohne unnötige externe Verbindungen.
 ## 🚀 Verwendung
 
 ```bash
-sudo bash setup.sh
+bash <(curl -s https://raw.githubusercontent.com/aathibaas/server-setup/main/setup.sh | sed 's/\r$//')
 ```
 
 Das Script **muss als root oder mit sudo** ausgeführt werden.  
